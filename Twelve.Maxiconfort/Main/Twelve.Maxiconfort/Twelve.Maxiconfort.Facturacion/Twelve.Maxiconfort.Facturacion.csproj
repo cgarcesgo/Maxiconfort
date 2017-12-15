@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{46A8C217-A890-4F34-8314-50FE1BD25BA4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Twelve.Maxiconfort.Facturacion</RootNamespace>
+    <AssemblyName>Twelve.Maxiconfort.Facturacion</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmFacturacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFacturacion.Designer.cs">
+      <DependentUpon>frmFacturacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmImprimirFactura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmImprimirFactura.Designer.cs">
+      <DependentUpon>frmImprimirFactura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MaxiconfortDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MaxiconfortDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MaxiconfortDataSetConsolidado.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MaxiconfortDataSetConsolidado.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmFacturacion.resx">
+      <DependentUpon>frmFacturacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmImprimirFactura.resx">
+      <DependentUpon>frmImprimirFactura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Reports\rptFactura.rdlc" />
+    <EmbeddedResource Include="Reports\rptFacturasByFechas.rdlc" />
+    <None Include="MaxiconfortDataSet.xsc">
+      <DependentUpon>MaxiconfortDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MaxiconfortDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MaxiconfortDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MaxiconfortDataSet.xss">
+      <DependentUpon>MaxiconfortDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MaxiconfortDataSetConsolidado.xsc">
+      <DependentUpon>MaxiconfortDataSetConsolidado.xsd</DependentUpon>
+    </None>
+    <None Include="MaxiconfortDataSetConsolidado.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MaxiconfortDataSetConsolidado.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MaxiconfortDataSetConsolidado.xss">
+      <DependentUpon>MaxiconfortDataSetConsolidado.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Twelve.Maxiconfort.Core\Twelve.Maxiconfort.Core.csproj">
+      <Project>{fb148e30-4825-4933-a649-e910097ce2cf}</Project>
+      <Name>Twelve.Maxiconfort.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Twelve.Maxiconfort.Model\Twelve.Maxiconfort.Model.csproj">
+      <Project>{f6473b4f-ffa5-4a59-9a94-8b6091c114d1}</Project>
+      <Name>Twelve.Maxiconfort.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Imagenes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\form factura.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\form factura1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\formFactura.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clean48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\saveblue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printblue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\saveplata.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Printplata.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new icon 48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\formFactura1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paper6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document185.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diskette18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\formFactura2NewTel.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

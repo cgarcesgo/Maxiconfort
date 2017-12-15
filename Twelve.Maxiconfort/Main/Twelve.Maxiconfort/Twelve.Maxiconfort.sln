@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Model", "Model", "{878C15EE-453A-47E2-B24A-03786FDD2140}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Windows", "Windows", "{8B891C43-F82D-4048-8E65-57890459730F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Twelve.Maxiconfort.Core", "Twelve.Maxiconfort.Core\Twelve.Maxiconfort.Core.csproj", "{FB148E30-4825-4933-A649-E910097CE2CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Twelve.Maxiconfort.Model", "Twelve.Maxiconfort.Model\Twelve.Maxiconfort.Model.csproj", "{F6473B4F-FFA5-4A59-9A94-8B6091C114D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Twelve.Maxiconfort.Facturacion", "Twelve.Maxiconfort.Facturacion\Twelve.Maxiconfort.Facturacion.csproj", "{46A8C217-A890-4F34-8314-50FE1BD25BA4}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://twelvegroup.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Twelve.Maxiconfort.Core\\Twelve.Maxiconfort.Core.csproj
+		SccProjectTopLevelParentUniqueName1 = Twelve.Maxiconfort.sln
+		SccProjectName1 = Twelve.Maxiconfort.Core
+		SccLocalPath1 = Twelve.Maxiconfort.Core
+		SccProjectUniqueName2 = Twelve.Maxiconfort.Model\\Twelve.Maxiconfort.Model.csproj
+		SccProjectTopLevelParentUniqueName2 = Twelve.Maxiconfort.sln
+		SccProjectName2 = Twelve.Maxiconfort.Model
+		SccLocalPath2 = Twelve.Maxiconfort.Model
+		SccProjectUniqueName3 = Twelve.Maxiconfort.Facturacion\\Twelve.Maxiconfort.Facturacion.csproj
+		SccProjectTopLevelParentUniqueName3 = Twelve.Maxiconfort.sln
+		SccProjectName3 = Twelve.Maxiconfort.Facturacion
+		SccLocalPath3 = Twelve.Maxiconfort.Facturacion
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FB148E30-4825-4933-A649-E910097CE2CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB148E30-4825-4933-A649-E910097CE2CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB148E30-4825-4933-A649-E910097CE2CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB148E30-4825-4933-A649-E910097CE2CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6473B4F-FFA5-4A59-9A94-8B6091C114D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6473B4F-FFA5-4A59-9A94-8B6091C114D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6473B4F-FFA5-4A59-9A94-8B6091C114D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6473B4F-FFA5-4A59-9A94-8B6091C114D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46A8C217-A890-4F34-8314-50FE1BD25BA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46A8C217-A890-4F34-8314-50FE1BD25BA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46A8C217-A890-4F34-8314-50FE1BD25BA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46A8C217-A890-4F34-8314-50FE1BD25BA4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FB148E30-4825-4933-A649-E910097CE2CF} = {878C15EE-453A-47E2-B24A-03786FDD2140}
+		{F6473B4F-FFA5-4A59-9A94-8B6091C114D1} = {878C15EE-453A-47E2-B24A-03786FDD2140}
+		{46A8C217-A890-4F34-8314-50FE1BD25BA4} = {8B891C43-F82D-4048-8E65-57890459730F}
+	EndGlobalSection
+EndGlobal
